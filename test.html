@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <title> 第一個標準的 HTML5 網頁</title>
+    <style>
+        .wrapper {
+  height: 250px;
+  background-color: #9096A6;
+  text-align: center;
+
+  /* Point */
+  font-size: 0;
+}
+.wrapper:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+p.text{
+  display: inline-block;
+  vertical-align: middle;
+
+  /* Point 要使用絕對值的 font-size 覆寫掉父層的 font-size: 0 */
+  font-size: 15px;
+}
+    </style>
+    <script>
+        function Button1Click() {
+            alert('Hello');
+            var Span1 = document.getElementById("Span1");
+            Span1.setAttribute('style', 'color:blue; font-size:30pt ');
+        }
+    </script>
+</head>
+<body>
+        <div class="wrapper">
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus suscipit explicabo unde sit atque exercitationem delectus qui ipsam, at. Vitae veritatis officia quidem commodi repudiandae illum cum, quisquam voluptatibus quaerat.</p>
+              </div>
+    <P>HELLO
+        <br />
+        <span id="Span1" style="color:brown; font-size:30pt "> HTML5 !</span>
+    </P>
+    <div >
+        <table>
+        <tr>
+        <td style="vertical-align:middle">
+            <img src='http://fakeimg.pl/300x200?text=Fake%20Image&font=lobster' alt=''/>
+            <span >aascascacsasc</span>
+        </td>
+    </tr></table>
+    </div>
+    <p>
+        Voluptate voluptate id magna mollit amet aute. Et minim cillum consequat aliqua eu nulla. Magna non anim adipisicing nisi veniam nisi velit occaecat fugiat ullamco proident sunt magna. Pariatur duis esse nisi ullamco culpa velit ex aute veniam aliqua Lorem nulla qui. Et velit proident officia et adipisicing sit pariatur consectetur. Esse in velit nostrud et duis ut. Officia sit incididunt est consequat id ullamco sint.
+    </p>
+    <br />
+    <button onclick="Button1Click();"> 我是按鈕 </button>
+</body>
+</html>
